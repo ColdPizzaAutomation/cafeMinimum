@@ -1,0 +1,19 @@
+var amountSpent = Number(prompt("How much money did your family membership spend at the cafe this month?"));
+
+if (amountSpent == 20) {
+     console.log("twenty dollars was spent; all proceeds go to cafe"); 
+}
+else if (amountSpent > 20) {
+     console.log("By spending " + amountSpent + " , you exceeded the minimum; all sales go to the cafe."); 
+}
+else if (amountSpent < 20) {
+    var difference = (20 -amountSpent);
+    console.log("You spent " + amountSpent + " at the cafe; " + difference + " went to the club."); 
+}
+else {
+  console.log("do nothing"); 
+}
+
+
+/* Was talking with a member today, explaining all conditions of how money could be spent with our cafe minimum. Turns out it was 
+a simple if / else statement, and I decided to put it into a program */
